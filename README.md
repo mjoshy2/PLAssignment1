@@ -1,4 +1,4 @@
-# PLAssignment1
+# Programming Languages Assignment 1
 
 For this assignment we will use three different languages. One has to be a statically typed language. One has to be a dynamically typed language. A third is your choice. Do not pick two languages that are too similar to each other.
 
