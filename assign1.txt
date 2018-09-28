@@ -1,0 +1,162 @@
+Assign1 Due 11:59PM September 14
+
+For this assignment we will use three different languages. One has to be a statically typed language. One has to be a dynamically typed language. A third is your choice. Do not pick two languages that are too similar to each other.
+
+Create files using proper extensions. Also create either a build file or a sh file that will compile (if necessary) and run your code to display the output or show test results automatically.
+
+If you need help with any of the steps, please ask. You do not have to fight with tools or code for a long time. The purpose of this course is to learn. If you're stuck, then ask for help and it will be given. If you start early, you will be able to make much better progress than if you start late.
+
+Given the following names, as an example,
+
+Abdon, Brandon, Christopher, Daniel, Denys, Diego, Edrienne, Eugene, Ezequiel, Gustavo, Houtan, Jeffry, Lina, Luis, Martin, Matthew, Mike, Naresh, Nicolas, Patricio, Pio, Rachel, Ravali, Samad, Shaneej, Shara, Sikender, Tommy, Venkat, Victor, Zachary
+
+write a program to 
+
+1. use mutability and imperative style to compute the average number of letters in the names.
+
+2. use mutability and imperative style to compute the number of names starting  with each letter (don't include a letter if no name stars with it).
+
+3. use immutability and functional style to compute the average number of letters in the names.
+
+4. use immutability and functional style to compute the number of names starting with each letter (don't include a letter if no name stars with it).
+
+Keep the printing of the results separate from the code/function that does the actual work and returns the result.
+
+Start with one language. Write code in that languages, evolve it using reviews. Once you've completed code in one language (and gotten a satisfactory review), then create in second language. Once that's completed, proceed to the third language, while using reviews in each step.
+
+After completing the coding (and only after that), answer the following questions:
+
+1. Discuss some of the things you have learned from working on this assignment.
+
+	One of the most prominent things we learned during this assignment was how
+	different languages are used to construct the same simple problems.
+
+	The most notable difference was how vastly different the setup and structure
+	for our languages were. Everything from directory structure to handling of
+	dependencies and tests differed with each language. For example JavaScript yielding a
+	nonrestrictive but simple structure with its package.json and the
+	installation of dependencies. This made it especially easy to import
+	external libraries to use. On the other hand, Rust presented a tight
+	structured system for its projects. However, the use of Cargo
+	allowed for seamless adjustments to the structure which was taken care
+	automatically by Rust, making the system easy to use despite its guidelines.
+
+	Another aspect we realized was how a programming style was able to be
+	carried across these different languages in an almost identical manner. We
+	where able to implement problems with both imperative and functional style
+	using the same line of logic for each programming language without major
+	changes. Granted, all languages we used had a leaning towards Functional
+	paradigms, but it shows how programming paradigms are carried across
+	languages deeper than the syntax.
+
+2. Were there any thing that surprised you or things that you did not expect.
+
+	One of the issues that I did not expect was the difficulties in setting up
+	F# on my Linux machine. While my partner was able to quickly setup F#,
+	automatically generate project info files, and create unit tests using the
+	IDE using Windows, I was left to combine setups for several packages which
+	gave the impression that F# had a system preference.
+
+	Another issue we faced was F#'s error messages. Often the error messages
+	produced by F# were hard to understand and did not give light to the problem
+	at hand. For example, we kept getting a type error within one of our
+	functions when we tried to return 0 if a list was empty, but return a float
+	when the list was not. Our use of dynamically typed languages caused us to
+	oversee this issue initially, but what made matters worse was the error
+	messages which F# returned back to us. With better error messages, time
+	could have been saved in dealing with this small issue.
+
+3. Given this experience, draw a comparison between the imperative style and the functional style.
+
+	Overall, imperative programming felt a bit too verbose at times. Operations
+	such as the standard for loop often used felt disconnected from the actual
+	calculations at hand, often leading to excessive amount of if statements for
+	a given task. This often lead to more clustered code than was
+	needed.
+
+	Functional programming on the other hand felt significantly more streamlined
+	and connected. It felt like constructing a specifically crafted assembly
+	line for a given task at hand, which performed these tasks with efficiency.
+	Functions such as map and reduce could be combined to construct simple and
+	clean solutions to their imperative counterparts. Due to this our functional
+	implementations were often shorter, simpler, and to the point when compared
+	with their imperative relatives. 
+
+4. Given this experience, draw a comparison between static typing and dynamic typing.
+
+	Given our prior experience with dynamically typed languages like Python,
+	programming in JavaScript felt familiar. We were fluidly able to compute and
+	assign values, often times without explicit typecasting, in ways we were
+	unable to with the other statically typed languages. This allowed us to
+	reduce our amount of code, such as when performing error checking, and not worry about issues such as returning 0.0
+	instead of 0.
+
+	However, while the statically typed languages forced us to explicitly handle
+	exceptions, typecast, and make sure functions only returned a single type of
+	value, they gave us security which the dynamically typed language did not
+	provide. This way even though we had to explicitly return 0.0 when returning
+	a float, we were guaranteed that our functions would return the correct type
+	of values. Furthermore, the statically typed languages we used did not
+	require explicit type declarations (except for function return values in the
+	case of Rust). This reduce one of the biggest issues with statically typed
+	languages forcing the creation of more code. 
+
+5. Of the three languages that you used, what are your impressions about each, their strengths, weaknesses, your likes/dislikes.
+
+
+	Of all the languages we were surprised at the simplicity brought by Rust.
+	Rust being a lower level language with aims to compete  with C++, presented
+	plenty of higher level operations, including those related to functional
+	programming, which do not seem to be common in lower level languages. When
+	we were first picking languages we decided to use Golang over Rust as many
+	stated that Rust required much more explicit statements (lines of code) to
+	produce the same results as Golang. However, this was not nearly as big of
+	an issue as we first presumed, especially when compared to past lower level
+	languages.
+
+	We also enjoyed working with JavaScript quite a bit. Programming with
+	JavaScript had an open laid back feel which was even more prominent than
+	most dynamic languages. Exceptions handling had fairly loose
+	guidelines when it came to JS. In our case we were able to use the relaxed
+	exception handling to reduce code in the case of a division by zero.
+	However, in some cases this could lead to JavaScript programs failing
+	silently so extra care might be needed. We enjoyed the structure and package management
+	brought by nodeJS, especially with how project paths were handled.
+
+	F# was in complete contrast with JavaScript. Programming in F# felt
+	significantly more restrained and we felt forced into a specific path when
+	using it. One small example of this is the fact that F# does not allow you
+	to use tabs for indentation and instead makes you use 4 spaces. When
+	building projects with F#, it felt like language tools were specifically
+	built for Windows systems as a majority of features seemed optimized to be
+	used in the Visual Studio IDE. Setting up projects and constructing tests
+	took me significantly longer to perform on Linux than it did my partner who
+	was using Windows. One large complaint I have regarding F# is it ambiguous
+	and undescriptive error messages. A few times we became stuck on a small
+	syntactical issue which could have been easily resolved given good error
+	messages.
+
+Total [100]: 100
+
+JavaScript [30]:
+Build present and tests work [5]:
+Language conventions, etc. [5]:
+Imperative solutions [5]:
+Functional average [5]:
+Functional count [10]:
+
+F# [30]:
+Build present and tests work [5]:
+Language conventions, etc. [5]:
+Imperative solutions [5]:
+Functional average [5]:
+Functional count [10]:
+
+Rust [30]:
+Build present and tests work [5]:
+Language conventions, etc. [5]:
+Imperative solutions [5]:
+Functional average [5]:
+Functional count [10]:
+
+Response to questions [10]:

@@ -1,0 +1,23 @@
+{
+	"scripts": {
+		"test": "jest --watchAll"
+	},
+	"jest": {
+		"collectCoverage": true,
+		"coverageReporters": [
+			"text",
+			"html"
+		]
+	},
+	"dependencies": {
+		"array-comprehension": "^0.1.1",
+		"defaultdict2": "^1.1.1",
+		"lodash.groupby": "^4.6.0",
+		"underscore": "^1.9.1"
+	},
+	"devDependencies": {
+		"jest": "^23.5.0"
+	},
+	"name": "assign1_pl",
+	"version": "0.0.2"
+}

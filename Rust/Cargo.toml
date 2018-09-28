@@ -1,0 +1,10 @@
+[package]
+name = "name_util"
+version = "0.0.5"
+
+[lib]
+name = "name_util"
+path = "src/name_util.rs"
+
+[dependencies]
+itertools = "0.7.3"
