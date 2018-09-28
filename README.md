@@ -21,5 +21,3 @@ write a program to
 4. use immutability and functional style to compute the number of names starting with each letter (don't include a letter if no name stars with it).
 
 Keep the printing of the results separate from the code/function that does the actual work and returns the result.
-
-Start with one language. Write code in that languages, evolve it using reviews. Once you've completed code in one language (and gotten a satisfactory review), then create in second language. Once that's completed, proceed to the third language, while using reviews in each step.
